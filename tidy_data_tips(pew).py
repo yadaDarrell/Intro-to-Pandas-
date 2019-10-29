@@ -32,12 +32,15 @@ id_vars = column which we want to hold/dont want to touch
 This melts all the columns as well.
 '''
 #id_vars parameter
-pd.melt(pew_data,id_vars='religion',var_name='income',value_name='frequency')
+pew_melt = pd.melt(pew_data,id_vars='religion')
 
 '''
 We see that a new column called variable is created.  
 The original column header now becomes the observation 
 '''
+#id_vars,value_name,var_name parameter
+pew_melt = pd.melt(pew_data,id_vars='religion',var_name='income',value_name='frequency')
+pew_melt.head()
 
 
 
