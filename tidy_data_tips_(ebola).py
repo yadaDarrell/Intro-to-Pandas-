@@ -2,6 +2,7 @@ import pandas as pd
 
 ##Tidying data 
 #Reference from Daniel Chen Pydata(2018)
+#This is still in progress. Will update along the way
 
 '''
 Let's see how we can make the dataset less 'wide' but 'long'?
